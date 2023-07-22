@@ -1,0 +1,36 @@
+body *{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+header {
+    background-color: #00888f;
+    border: 1px solid black;
+    color: white;
+    padding: 1px 1px 1px 10px;
+    text-align: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+}
+
+header h1{
+    font-size: 22px;
+    font-weight: 600;
+
+}
+
+header a{
+    display: inline;
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+}
