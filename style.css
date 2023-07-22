@@ -20,6 +20,9 @@ header {
     left: 0;
     height: auto;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header h1{
@@ -29,7 +32,7 @@ header h1{
 }
 
 header a{
-    display: inline;
+    margin-right: 50px;
     font-size: 12px;
     font-weight: 500;
     color: white;
