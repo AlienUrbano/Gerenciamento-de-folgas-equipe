@@ -73,13 +73,6 @@ header a:hover{
   transform: scale(1.1);
 }
 
-/* .selected {
-  background-color: #00888f;
-  color: white;
-  transform: scale(1.1);
-}
-*/
-
 .menu {
   text-align: center;
 }
@@ -111,13 +104,18 @@ header a:hover{
   cursor: pointer;
   color: #c60000;
   font-size: 28px;
+  transition: 0.2s ease;
 }
 
+.remove-icon:hover {
+  transform: scale(1.1);
+
+}
 .add-membro {
   display: flex;
   max-width: 400px;
   align-items: center;
-  justify-content: space-between;
+  justify-content:space-between;
   margin-top: 20px;
 }
 
@@ -125,6 +123,7 @@ header a:hover{
   padding: 5px;
   flex-grow: 1;
   margin-right: 10px;
+  min-width: 100px;
 }
 
 .add-membro button {
@@ -137,6 +136,7 @@ header a:hover{
 
 .add-membro button:hover {
   background-color: #005d68;
+  transform: scale(1.1);
 }
 
 .gestor, .perfis, .cadastro-perfil {
@@ -183,3 +183,70 @@ header a:hover{
 .cadastro-perfil button:hover{
   background-color: #005d68;
 }
+
+#calendar{
+  width:358px;
+  margin:0 auto;
+  margin-top:2%;
+  margin-bottom:2%;
+  border-radius:5px;
+  font-family:'Open Sans',sans-serif;
+  text-align:center;
+  color:#555;
+  /* box-shadow:0 0 50px -14px rgba(0,0,0,.8);*/
+}
+
+#calendar h1{
+  background:#005d68;
+  border-radius:5px 5px 0 0;
+  padding:20px;
+  font-size:140%;
+  font-weight:300;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  color:#fff;
+  cursor:default;
+  text-shadow:0 0 10px rgba(0,0,0,.8);
+}
+
+#calendar table{
+  border-top:1px solid #ddd;
+  border-left:1px solid #ddd;
+  border-spacing:0;
+  border-radius:0 0 5px 5px;
+}
+
+#calendar td{
+  width:38px;
+  height:38px;
+  background:#eee;
+  border-right:1px solid #ddd;
+  border-bottom:1px solid #ddd;
+  padding:6px;
+  cursor:pointer;
+  transition:background .3s;
+  -webkit-transition:background .3s;
+}
+
+#calendar td:hover:not(.current){
+  background:#ddd;
+}
+
+#calendar .lastmonth,#calendar .nextmonth,#calendar .nextmonth ~ *{
+  background:#fff;
+  color:#999;
+}
+
+#calendar .current{
+  background:#005d68;
+  font-weight:700;
+  color:#fff;
+  text-shadow:0 0 10px rgba(0,0,0,.5);
+}
+
+#calendar .hastask{
+  font-weight:700;
+}
+
+#calendar tr:last-of-type td:first-of-type{border-radius:0 0 0 5px;}
+#calendar tr:last-of-type td:last-of-type{border-radius:0 0 5px 0;}
