@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="calendar.js"></script>
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,17 +18,80 @@
   </head>
   <body>
     <header>
-      <h1>Gerenciador de folgas</h1>
+      <h1><ion-icon name="calendar-outline"></ion-icon>Gerenciador de folgas</h1>
       <a href="https://alienurbano.github.io">by Paulo Gabriel Neves Santos</a>
     </header>
 
-    <div class="conteudo">
+    <div class="conteiner-menu">
       <div class="menu">
-        <p id="equipe">Equipe</p>
-        <p id="calendario">Calendário</p>
-        <p id="perfil">Perfil</p>
+        
+        <a href="#equipe" onclick="mostrarConteudo('conteudoEquipe')"id="equipe-link">
+          <ion-icon name="people"></ion-icon>
+          Equipe
+      </a>
+
+      <a href="#calendario" onclick="mostrarConteudo('conteudoCalendario')"id="calendario-link">
+          <ion-icon name="calendar-number"></ion-icon>
+          Calendário
+      </a>
+
+      <a href="#perfil" onclick="mostrarConteudo('conteudoPerfil')"id="perfil-link">
+          <ion-icon name="person-circle"></ion-icon>
+          Perfil
+      </a>
+
       </div>
     </div>
+
+    <div class="conteudo" id="conteudoEquipe" style="display: none;">
+      <div class="equipe-list">
+        <div class="membro">
+            <span>Paulo Gabriel Neves Santos</span>
+            <ion-icon name="remove-circle-outline" class="remove-icon" onclick="removerMembro(this)"></ion-icon>
+        </div>
+        <div class="membro">
+            <span>Isabele Fernanda Mendes de Campos</span>
+            <ion-icon name="remove-circle-outline" class="remove-icon" onclick="removerMembro(this)"></ion-icon>
+        </div>
+        
     </div>
+    <div class="add-membro">
+        <input type="text" placeholder="Nome do novo colaborador" id="novo-membro">
+        <button onclick="adicionarMembro()">Adicionar</button>
+    </div>
+  </div>
+
+  <div class="conteudo" id="conteudoCalendario" style="display: none;">
+    <h1>Conteúdo do calendário</h1>
+  </div>
+
+  <div class="conteudo" id="conteudoPerfil" style="display: none;">
+
+    <div class="gestor">
+      <h3>Login do Gestor</h3>
+      <input type="text" placeholder="Nome de usuário">
+      <input type="password" placeholder="Senha">
+      <button>Entrar</button>
+  </div>
+
+    <div class="cadastro-perfil">
+      <h3>Cadastro de Perfil</h3>
+      <input type="text" placeholder="Nome">
+      <input type="text" placeholder="Cargo">
+      <input type="text" placeholder="Setor">
+      <input type="text" placeholder="Login">
+      <input type="text" placeholder="Senha">
+
+      <select>
+  
+          <option value="manha">Turno: Manhã</option>
+          <option value="tarde">Turno: Tarde</option>
+          <option value="noite">Turno: Noite</option>
+      </select>
+      <button>Cadastrar</button>
+  </div>
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>

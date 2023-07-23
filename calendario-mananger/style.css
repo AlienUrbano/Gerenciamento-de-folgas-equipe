@@ -10,7 +10,7 @@ body {
 
 header {
   background-color: #00888f;
-  color: rgb(0, 10, 99);
+  color: white;
   padding: 1px 1px 1px 10px;
   text-align: left;
   position: fixed;
@@ -30,26 +30,156 @@ header h1 {
 
 header a {
   margin-right: 50px;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 500;
   color: white;
+  transition: transform 0.5s ease;
 }
 
-.conteudo p {
+header ion-icon{
+  font-size: 24px;
+  vertical-align: middle;
+  margin-bottom: 4px;
+  padding-right: 10px;
+}
+
+header a:hover{
+  background-color: rgb(0, 10, 99);
+  padding: 5px;
+  transform: scale(1.1);
+}
+
+.conteiner-menu a {
   display: inline-block;
   width: auto;
   margin-top: 70px;
-  padding: 10px 50px;
+  padding: 10px 20px;
   font-size: 18px;
   cursor: pointer;
+  transition: transform 0.2s ease;
+  line-height: 24px;
+}
+.menu ion-icon{
+  
+  padding: 0 10px 0 0 ;
+  font-size: 24px;
+  vertical-align: middle;
+  margin-bottom: 4px;
 }
 
-.menu p:hover {
+.menu a:hover {
   background-color: #00888f;
   color: white;
   transform: scale(1.1);
 }
 
+/* .selected {
+  background-color: #00888f;
+  color: white;
+  transform: scale(1.1);
+}
+*/
+
 .menu {
   text-align: center;
+}
+
+
+/* Estilos para a equipe */
+
+.conteudo {
+  text-align: center; 
+  max-width: 400px; 
+  margin: 0 auto; 
+}
+
+.equipe-list {
+  margin-top: 20px;
+}
+
+.membro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.remove-icon {
+  cursor: pointer;
+  color: #c60000;
+  font-size: 28px;
+}
+
+.add-membro {
+  display: flex;
+  max-width: 400px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.add-membro input {
+  padding: 5px;
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.add-membro button {
+  padding: 5px 10px;
+  background-color: #00888f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.add-membro button:hover {
+  background-color: #005d68;
+}
+
+.gestor, .perfis, .cadastro-perfil {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  padding: 30px;
+  max-width: 400px;
+}
+
+.gestor input, .perfis select, .cadastro-perfil input, .cadastro-perfil select, .cadastro-perfil button {
+  margin-top: 10px;
+  padding: 5px;
+  width: 95%;
+  max-width: 400px;
+}
+
+.gestor button{
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #00888f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.gestor button:hover{
+  background-color: #005d68;
+}
+.cadastro-perfil select, .cadastro-perfil button {
+  width: 100%;
+  max-width: 500px;
+  
+}
+
+.cadastro-perfil button{
+
+  padding: 5px 10px;
+  background-color: #00888f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.cadastro-perfil button:hover{
+  background-color: #005d68;
 }
