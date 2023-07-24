@@ -36,14 +36,14 @@ header a {
   transition: transform 0.5s ease;
 }
 
-header ion-icon{
+header ion-icon {
   font-size: 24px;
   vertical-align: middle;
   margin-bottom: 4px;
   padding-right: 10px;
 }
 
-header a:hover{
+header a:hover {
   background-color: rgb(0, 10, 99);
   padding: 5px;
   transform: scale(1.1);
@@ -59,9 +59,8 @@ header a:hover{
   transition: transform 0.2s ease;
   line-height: 24px;
 }
-.menu ion-icon{
-  
-  padding: 0 10px 0 0 ;
+.menu ion-icon {
+  padding: 0 10px 0 0;
   font-size: 24px;
   vertical-align: middle;
   margin-bottom: 4px;
@@ -77,13 +76,12 @@ header a:hover{
   text-align: center;
 }
 
-
 /* Estilos para a equipe */
 
 .conteudo {
-  text-align: center; 
-  max-width: 400px; 
-  margin: 0 auto; 
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .equipe-list {
@@ -109,13 +107,12 @@ header a:hover{
 
 .remove-icon:hover {
   transform: scale(1.1);
-
 }
 .add-membro {
   display: flex;
   max-width: 400px;
   align-items: center;
-  justify-content:space-between;
+  justify-content: space-between;
   margin-top: 20px;
 }
 
@@ -139,21 +136,27 @@ header a:hover{
   transform: scale(1.1);
 }
 
-.gestor, .perfis, .cadastro-perfil {
+.gestor,
+.perfis,
+.cadastro-perfil {
   margin-top: 20px;
   border: 1px solid #ddd;
   padding: 30px;
   max-width: 400px;
 }
 
-.gestor input, .perfis select, .cadastro-perfil input, .cadastro-perfil select, .cadastro-perfil button {
+.gestor input,
+.perfis select,
+.cadastro-perfil input,
+.cadastro-perfil select,
+.cadastro-perfil button {
   margin-top: 10px;
   padding: 5px;
   width: 95%;
   max-width: 400px;
 }
 
-.gestor button{
+.gestor button {
   margin-top: 10px;
   padding: 5px 10px;
   background-color: #00888f;
@@ -162,17 +165,16 @@ header a:hover{
   cursor: pointer;
 }
 
-.gestor button:hover{
+.gestor button:hover {
   background-color: #005d68;
 }
-.cadastro-perfil select, .cadastro-perfil button {
+.cadastro-perfil select,
+.cadastro-perfil button {
   width: 100%;
   max-width: 500px;
-  
 }
 
-.cadastro-perfil button{
-
+.cadastro-perfil button {
   padding: 5px 10px;
   background-color: #00888f;
   color: white;
@@ -180,73 +182,79 @@ header a:hover{
   cursor: pointer;
 }
 
-.cadastro-perfil button:hover{
+.cadastro-perfil button:hover {
   background-color: #005d68;
 }
 
-#calendar{
-  width:358px;
-  margin:0 auto;
-  margin-top:2%;
-  margin-bottom:2%;
-  border-radius:5px;
-  font-family:'Open Sans',sans-serif;
-  text-align:center;
-  color:#555;
+#calendar {
+  width: 358px;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  color: #555;
   /* box-shadow:0 0 50px -14px rgba(0,0,0,.8);*/
 }
 
-#calendar h1{
-  background:#005d68;
-  border-radius:5px 5px 0 0;
-  padding:20px;
-  font-size:140%;
-  font-weight:300;
-  text-transform:uppercase;
-  letter-spacing:1px;
-  color:#fff;
-  cursor:default;
-  text-shadow:0 0 10px rgba(0,0,0,.8);
+#calendar h1 {
+  background: #005d68;
+  border-radius: 5px 5px 0 0;
+  padding: 20px;
+  font-size: 140%;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  cursor: default;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
-#calendar table{
-  border-top:1px solid #ddd;
-  border-left:1px solid #ddd;
-  border-spacing:0;
-  border-radius:0 0 5px 5px;
+#calendar table {
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-spacing: 0;
+  border-radius: 0 0 5px 5px;
 }
 
-#calendar td{
-  width:38px;
-  height:38px;
-  background:#eee;
-  border-right:1px solid #ddd;
-  border-bottom:1px solid #ddd;
-  padding:6px;
-  cursor:pointer;
-  transition:background .3s;
-  -webkit-transition:background .3s;
+#calendar td {
+  width: 38px;
+  height: 38px;
+  background: #eee;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+  -webkit-transition: background 0.3s;
 }
 
-#calendar td:hover:not(.current){
-  background:#ddd;
+#calendar td:hover:not(.current) {
+  background: #ddd;
 }
 
-#calendar .lastmonth,#calendar .nextmonth,#calendar .nextmonth ~ *{
-  background:#fff;
-  color:#999;
+#calendar .lastmonth,
+#calendar .nextmonth,
+#calendar .nextmonth ~ * {
+  background: #fff;
+  color: #999;
 }
 
-#calendar .current{
-  background:#005d68;
-  font-weight:700;
-  color:#fff;
-  text-shadow:0 0 10px rgba(0,0,0,.5);
+#calendar .current {
+  background: #005d68;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-#calendar .hastask{
-  font-weight:700;
+#calendar .hastask {
+  font-weight: 700;
 }
 
-#calendar tr:last-of-type td:first-of-type{border-radius:0 0 0 5px;}
-#calendar tr:last-of-type td:last-of-type{border-radius:0 0 5px 0;}
+#calendar tr:last-of-type td:first-of-type {
+  border-radius: 0 0 0 5px;
+}
+#calendar tr:last-of-type td:last-of-type {
+  border-radius: 0 0 5px 0;
+}

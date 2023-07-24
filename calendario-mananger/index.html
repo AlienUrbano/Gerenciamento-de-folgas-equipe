@@ -7,7 +7,6 @@
     <script type="text/javascript" src="script.js"></script>
     <script type="text/javascript" src="calendar.js"></script>
 
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,91 +17,154 @@
   </head>
   <body>
     <header>
-      <h1><ion-icon name="calendar-outline"></ion-icon>Gerenciador de folgas</h1>
+      <h1>
+        <ion-icon name="calendar-outline"></ion-icon>Gerenciador de folgas
+      </h1>
       <a href="https://alienurbano.github.io">by Paulo Gabriel Neves Santos</a>
     </header>
 
     <div class="conteiner-menu">
       <div class="menu">
-        
-        <a href="#equipe" onclick="mostrarConteudo('conteudoEquipe')"id="equipe-link">
+        <a
+          href="#equipe"
+          onclick="mostrarConteudo('conteudoEquipe')"
+          id="equipe-link"
+        >
           <ion-icon name="people"></ion-icon>
           Equipe
-      </a>
+        </a>
 
-      <a href="#calendario" onclick="mostrarConteudo('conteudoCalendario')"id="calendario-link">
+        <a
+          href="#calendario"
+          onclick="mostrarConteudo('conteudoCalendario')"
+          id="calendario-link"
+        >
           <ion-icon name="calendar-number"></ion-icon>
           Calendário
-      </a>
+        </a>
 
-      <a href="#perfil" onclick="mostrarConteudo('conteudoPerfil')"id="perfil-link">
+        <a
+          href="#perfil"
+          onclick="mostrarConteudo('conteudoPerfil')"
+          id="perfil-link"
+        >
           <ion-icon name="person-circle"></ion-icon>
           Perfil
-      </a>
-
+        </a>
       </div>
     </div>
 
-    <div class="conteudo" id="conteudoEquipe" style="display: none;">
+    <div class="conteudo" id="conteudoEquipe" style="display: none">
       <div class="equipe-list">
         <div class="membro">
-            <span>Paulo Gabriel Neves Santos</span>
-            <ion-icon name="remove-circle-outline" class="remove-icon" onclick="removerMembro(this)"></ion-icon>
+          <span>Paulo Gabriel Neves Santos</span>
+          <ion-icon
+            name="remove-circle-outline"
+            class="remove-icon"
+            onclick="removerMembro(this)"
+          ></ion-icon>
         </div>
         <div class="membro">
-            <span>Isabele Fernanda Mendes de Campos</span>
-            <ion-icon name="remove-circle-outline" class="remove-icon" onclick="removerMembro(this)"></ion-icon>
+          <span>Isabele Fernanda Mendes de Campos</span>
+          <ion-icon
+            name="remove-circle-outline"
+            class="remove-icon"
+            onclick="removerMembro(this)"
+          ></ion-icon>
         </div>
-        
-    </div>
-    <div class="add-membro">
-        <input type="text" placeholder="Nome" id="novo-membro">
-        <input type="text" placeholder="Aniversário" id="novo-bday">
+      </div>
+      <div class="add-membro">
+        <input type="text" placeholder="Nome" id="novo-membro" />
+        <input type="text" placeholder="Aniversário" id="novo-bday" />
 
         <button onclick="adicionarMembro()">Adicionar</button>
+      </div>
     </div>
-  </div>
 
-  <div class="conteudo" id="conteudoCalendario" style="display: none;">
-    <div id="calendar">
-      <h1>Outubro</h1>
-      <table>
-        <tr><td class="lastmonth">30</td><td>1</td><td>2</td><td>3</td><td class="hastask">4</td><td>5</td><td>6</td></tr>
-        <tr><td>7</td><td class="current">8</td><td class="hastask">9</td><td>10</td><td>11</td><td class="hastask">12</td><td>13</td></tr>
-        <tr><td>14</td><td class="hastask">15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td></tr>
-        <tr><td class="hastask">21</td><td>22</td><td>23</td><td>24</td><td>25</td><td class="hastask">26</td><td>27</td></tr>
-        <tr><td>28</td><td>29</td><td class="hastask">30</td><td>31</td><td class="nextmonth">1</td><td>2</td><td>3</td></tr>
-      </table>
+    <div class="conteudo" id="conteudoCalendario" style="display: none">
+      <div id="calendar">
+        <h1>Outubro</h1>
+        <table>
+          <tr>
+            <td class="lastmonth">30</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td class="hastask">4</td>
+            <td>5</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td class="current">8</td>
+            <td class="hastask">9</td>
+            <td>10</td>
+            <td>11</td>
+            <td class="hastask">12</td>
+            <td>13</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td class="hastask">15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td class="hastask">21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td class="hastask">26</td>
+            <td>27</td>
+          </tr>
+          <tr>
+            <td>28</td>
+            <td>29</td>
+            <td class="hastask">30</td>
+            <td>31</td>
+            <td class="nextmonth">1</td>
+            <td>2</td>
+            <td>3</td>
+          </tr>
+        </table>
+      </div>
     </div>
-  </div>
 
-  <div class="conteudo" id="conteudoPerfil" style="display: none;">
+    <div class="conteudo" id="conteudoPerfil" style="display: none">
+      <div class="gestor">
+        <h3>Login do Gestor</h3>
+        <input type="text" placeholder="Nome de usuário" />
+        <input type="password" placeholder="Senha" />
+        <button>Entrar</button>
+      </div>
 
-    <div class="gestor">
-      <h3>Login do Gestor</h3>
-      <input type="text" placeholder="Nome de usuário">
-      <input type="password" placeholder="Senha">
-      <button>Entrar</button>
-  </div>
+      <div class="cadastro-perfil">
+        <h3>Cadastro de Perfil</h3>
+        <input type="text" placeholder="Nome" />
+        <input type="text" placeholder="Cargo" />
+        <input type="text" placeholder="Setor" />
+        <input type="text" placeholder="Login" />
+        <input type="text" placeholder="Senha" />
 
-    <div class="cadastro-perfil">
-      <h3>Cadastro de Perfil</h3>
-      <input type="text" placeholder="Nome">
-      <input type="text" placeholder="Cargo">
-      <input type="text" placeholder="Setor">
-      <input type="text" placeholder="Login">
-      <input type="text" placeholder="Senha">
-
-      <select>
-  
+        <select>
           <option value="manha">Turno: Manhã</option>
           <option value="tarde">Turno: Tarde</option>
           <option value="noite">Turno: Noite</option>
-      </select>
-      <button>Cadastrar</button>
-  </div>
-  </div>
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        </select>
+        <button>Cadastrar</button>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
