@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script type="text/javascript" src="script.js"></script>
-    <script type="text/javascript" src="calendar.js"></script>
 
+    <script type="text/javascript" src="script.js"></script>
+    <script type="module" src="calendar.js"></script>
+    <script type="text/javascript" src="member.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -55,7 +56,7 @@
     </div>
 
     <div class="conteudo" id="conteudoEquipe" style="display: none">
-      <div class="equipe-list">
+      <div class="equipe-list" id="equipeList">
         <div class="membro">
           <span>Paulo Gabriel Neves Santos</span>
           <ion-icon
@@ -145,6 +146,11 @@
       <div class="cadastro-perfil">
         <h3>Cadastro de Perfil</h3>
         <input type="text" placeholder="Nome" />
+        <select class="empresa">
+          <option value="dbAc">DB Análises Clínicas</option>
+          <option value="dbTox">DB Tóxicologico</option>
+          <option value="outro">Outras</option>
+        </select>
         <input type="text" placeholder="Cargo" />
         <input type="text" placeholder="Setor" />
         <input type="text" placeholder="Login" />
