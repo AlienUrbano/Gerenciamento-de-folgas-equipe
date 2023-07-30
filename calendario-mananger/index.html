@@ -26,32 +26,31 @@
 
     <div class="conteiner-menu">
       <div class="menu">
-        <a
-          href="#equipe"
-          onclick="mostrarConteudo('conteudoEquipe')"
+        <p
+          onclick="mostrarConteudo('conteudoEquipe');
+          mostrarSelecionado('equipe-link')"
           id="equipe-link"
         >
           <ion-icon name="people"></ion-icon>
           Equipe
-        </a>
+        </p>
 
-        <a
-          href="#calendario"
-          onclick="mostrarConteudo('conteudoCalendario')"
+        <p
+          onclick="mostrarConteudo('conteudoCalendario'); mostrarSelecionado('calendario-link')"
           id="calendario-link"
         >
           <ion-icon name="calendar-number"></ion-icon>
           Calendário
-        </a>
+        </p>
 
-        <a
-          href="#perfil"
-          onclick="mostrarConteudo('conteudoPerfil')"
+        <p
+          onclick="mostrarConteudo('conteudoPerfil'); 
+          mostrarSelecionado('perfil-link')"
           id="perfil-link"
         >
           <ion-icon name="person-circle"></ion-icon>
           Perfil
-        </a>
+        </p>
       </div>
     </div>
 

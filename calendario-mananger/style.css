@@ -21,6 +21,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 1000;
 }
 
 header h1 {
@@ -49,7 +50,7 @@ header a:hover {
   transform: scale(1.1);
 }
 
-.conteiner-menu a {
+.conteiner-menu p {
   display: inline-block;
   width: auto;
   margin-top: 70px;
@@ -66,7 +67,7 @@ header a:hover {
   margin-bottom: 4px;
 }
 
-.menu a:hover {
+.menu p:hover {
   background-color: #00888f;
   color: white;
   transform: scale(1.1);
@@ -82,6 +83,13 @@ header a:hover {
   text-align: center;
   max-width: 400px;
   margin: 0 auto;
+  overflow: auto;
+}
+
+.menu .selected {
+  background-color: #00888f;
+  color: white;
+  transform: scale(1.1);
 }
 
 .equipe-list {

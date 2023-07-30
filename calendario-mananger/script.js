@@ -7,3 +7,13 @@ function mostrarConteudo(conteudoId) {
   const conteudoSelecionado = document.getElementById(conteudoId);
   conteudoSelecionado.style.display = "block";
 }
+
+function mostrarSelecionado(menuId) {
+  const menus = document.querySelectorAll(".menu p");
+  for (const menu of menus) {
+    menu.classList.remove("selected");
+  }
+
+  const menuSelecionado = document.getElementById(menuId);
+  menuSelecionado.classList.add("selected");
+}
