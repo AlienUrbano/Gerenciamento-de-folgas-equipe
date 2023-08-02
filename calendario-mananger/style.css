@@ -75,21 +75,20 @@ header a:hover {
 
 .menu {
   text-align: center;
-}
-
-/* Estilos para a equipe */
-
-.conteudo {
-  text-align: center;
-  max-width: 400px;
-  margin: 0 auto;
-  overflow: auto;
+  caret-color: transparent;
 }
 
 .menu .selected {
   background-color: #00888f;
   color: white;
   transform: scale(1.1);
+}
+.conteudo {
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  overflow: auto;
+
 }
 
 .equipe-list {
