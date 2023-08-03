@@ -304,15 +304,16 @@ header a:hover {
 .form-container table {
   margin: 20px auto;
   width: 100%;
-  border:2px solid  #005d68;
+  border: 1px solid #005d68;
 }
-.form-container thead{
+.form-container th,td{
   text-align: left;
+  border-collapse: collapse;
+  
 
 }
 .form-container td {
-  font-size: 12px;
-  text-align: left;
+  font-size: 0.7rem;
   
 }
 .form-container table ion-icon {
