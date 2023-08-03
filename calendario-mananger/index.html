@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
 
     <script type="text/javascript" src="script.js"></script>
-    <script type="module" src="calendar.js"></script>
+    <script type="text/javascript" src="calendar.js"></script>
     <script type="text/javascript" src="member.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -135,11 +135,23 @@
 
       <div class="form-container">
         <form class="manage-folga">
-          <button>
+          <button type="button" class="addFolga" onclick="openModal()">
             Adicionar folga
             <ion-icon name="add-circle-outline"></ion-icon>
           </button>
         </form>
+
+        <div class="modal-overlay" id="modalOverlay">
+          <div class="modal-container">
+            <select class="colaborador">
+              <option>Paulo Gabriel Neves Santos</option>
+              <option>Isabele Fernanda de Mendes Campos</option>
+              <option value="outro">...</option>
+              <input type="date">
+            </select>
+            <button class="close-modal" onclick="closeModal()">Fechar</button>
+          </div>
+        </div>
 
         <table>
           <thead>
@@ -161,7 +173,6 @@
                 name="remove-circle-outline"
                 class="remove-icon"
               ></ion-icon>
-              
             </td>
           </tbody>
           <tbody>
@@ -174,10 +185,8 @@
                 name="remove-circle-outline"
                 class="remove-icon"
               ></ion-icon>
-              
             </td>
           </tbody>
-
         </table>
       </div>
     </div>
@@ -219,5 +228,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script type="text/javascript" src="dayoff.js"></script>
   </body>
 </html>

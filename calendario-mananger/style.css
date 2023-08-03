@@ -88,7 +88,6 @@ header a:hover {
   max-width: 400px;
   margin: 0 auto;
   overflow: auto;
-
 }
 
 .equipe-list {
@@ -115,7 +114,6 @@ header a:hover {
 .remove-icon:hover {
   transform: scale(1.1);
 }
-
 
 .edit-icon {
   cursor: pointer;
@@ -215,8 +213,7 @@ header a:hover {
   font-family: "Open Sans", sans-serif;
   text-align: center;
   color: #555;
-  box-shadow: 5px 5px  rgba(0,0,0,0.03);
-  
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.03);
 }
 
 #calendar h1 {
@@ -280,42 +277,76 @@ header a:hover {
   border-radius: 0 0 5px 0;
 }
 
-.form-container{
+.form-container {
   margin-top: 50px;
-
 }
 
 .manage-folga button {
   margin: auto;
-  width:50%;
+  width: 50%;
   padding: 10px 10px;
   background-color: #00888f;
   color: white;
   border: none;
-  cursor: pointer;  
+  cursor: pointer;
 }
 
-.manage-folga ion-icon{
+.manage-folga ion-icon {
   font-size: 24px;
   vertical-align: middle;
- 
 }
 
+.manage-folga button:hover {
+  background-color: #005d68;
+}
 .form-container table {
   margin: 20px auto;
   width: 100%;
   border: 1px solid #005d68;
 }
-.form-container th,td{
+.form-container th,
+td {
   text-align: left;
   border-collapse: collapse;
-  
-
 }
 .form-container td {
   font-size: 0.7rem;
-  
 }
 .form-container table ion-icon {
   font-size: 24px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.close-modal {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #00888f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.close-modal:hover {
+  background-color: #005d68;
+}
+
+.modal-visible {
+  display: flex;
 }
