@@ -115,6 +115,19 @@ header a:hover {
 .remove-icon:hover {
   transform: scale(1.1);
 }
+
+
+.edit-icon {
+  cursor: pointer;
+  color: #005d68;
+  font-size: 28px;
+  transition: 0.2s ease;
+}
+
+.edit-icon:hover {
+  transform: scale(1.1);
+}
+
 .add-membro {
   display: flex;
   max-width: 400px;
@@ -202,7 +215,8 @@ header a:hover {
   font-family: "Open Sans", sans-serif;
   text-align: center;
   color: #555;
-  /* box-shadow:0 0 50px -14px rgba(0,0,0,.8);*/
+  box-shadow: 5px 5px  rgba(0,0,0,0.03);
+  
 }
 
 #calendar h1 {
@@ -264,4 +278,43 @@ header a:hover {
 }
 #calendar tr:last-of-type td:last-of-type {
   border-radius: 0 0 5px 0;
+}
+
+.form-container{
+  margin-top: 50px;
+
+}
+
+.manage-folga button {
+  margin: auto;
+  width:50%;
+  padding: 10px 10px;
+  background-color: #00888f;
+  color: white;
+  border: none;
+  cursor: pointer;  
+}
+
+.manage-folga ion-icon{
+  font-size: 24px;
+  vertical-align: middle;
+ 
+}
+
+.form-container table {
+  margin: 20px auto;
+  width: 100%;
+  border:2px solid  #005d68;
+}
+.form-container thead{
+  text-align: left;
+
+}
+.form-container td {
+  font-size: 12px;
+  text-align: left;
+  
+}
+.form-container table ion-icon {
+  font-size: 24px;
 }
