@@ -1,3 +1,6 @@
+#calendar *{
+  text-align: center;
+}
 #calendar {
   width: 358px;
   margin: 0 auto;
@@ -48,7 +51,7 @@
   -webkit-transition: background 0.3s;
 }
 
-#calendar td:hover:not(.current) {
+#calendar td:hover:not(.current):not(.weekDays) {
   background: #ddd;
 }
 

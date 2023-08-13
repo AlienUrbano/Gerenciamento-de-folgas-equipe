@@ -65,6 +65,7 @@ function imprimeDiasMesCorrente() {
 
     if (x <= comecaNoDia) {
       td.innerText = "";
+      td.classList.add("lastmonth")
     } else {
       td.innerText = nDia;
       //console.log("termina no dia " + dataHoraCopia.getDay() + "("+nDia+")")
@@ -91,6 +92,7 @@ function imprimeDiasMesCorrente() {
   for (let x =0; x<totalTds;x++){
     const td = document.createElement("td")
     td.innerText = ""
+    td.classList.add("nextmonth")
     tr.appendChild(td)
   }
   tbody.appendChild(tr);
