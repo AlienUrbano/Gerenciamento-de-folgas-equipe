@@ -1,7 +1,21 @@
+let dataHora = new Date();
+dataHora.setDate(1)
+let dia = dataHora.getDate()
+let mes = dataHora.getMonth()
+let ano = dataHora.getFullYear()
+let diaSemana = dataHora.getDay()
+
+let meses = [
+              "Janeiro", "Fevereiro", "Março", "Abril","Maio", "junho",
+              "Julho", "Agosto","Setembro", "Outubro", "Novembro", "Dezembro"
+]
+
+//let proximoMes = new Date(dataHora).setMonth( mes +1)
+
 const divCalendar = document.getElementById("calendar")
 
 const h1 = document.createElement("h1")
-h1.innerText = "janeiro 2023"
+h1.innerText = meses[mes] + " " +ano
 divCalendar.appendChild(h1)
 
 const table = document.createElement('table')
@@ -31,12 +45,12 @@ tr.appendChild(td)
 
     function imprimeDiasNumericos() {
         let tr = document.createElement("tr")
-        for(let dia =1; dia <=31; dia++){
+        for(let ndia =1; ndia <=31; ndia++){
             const td = document.createElement("td")
-            td.innerText = dia
+            td.innerText = ndia
             tr.appendChild(td)
 
-            if (dia % 7 === 0) {
+            if (ndia % 7 === 0) {
                 tbody.appendChild(tr)
                 tr = document.createElement("tr")
             }
@@ -48,3 +62,4 @@ tr.appendChild(td)
 imprimeDiasDaSemanas()
 imprimeDiasNumericos()
 divCalendar.appendChild(table)
+
