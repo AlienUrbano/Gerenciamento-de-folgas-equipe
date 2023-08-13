@@ -22,6 +22,12 @@
   cursor: default;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
+#calendar .weekDays{
+  background: #008796;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 
 #calendar table {
   border-top: 1px solid #ddd;

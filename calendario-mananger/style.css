@@ -1,11 +1,11 @@
 body * {
   font-family: "Inter", sans-serif;
-  font-size: 16px;
+  font-size: 16px;  
 }
 body {
   margin: 0;
   padding: 0;
-  background: white;
+  background: white;  
 }
 
 header {
@@ -228,12 +228,19 @@ header a:hover {
   cursor: default;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
+#calendar .weekDays{
+  background: #008796;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 
 #calendar table {
   border-top: 1px solid #ddd;
   border-left: 1px solid #ddd;
   border-spacing: 0;
   border-radius: 0 0 5px 5px;
+  
 }
 
 #calendar td {
@@ -246,6 +253,7 @@ header a:hover {
   cursor: pointer;
   transition: background 0.3s;
   -webkit-transition: background 0.3s;
+  
 }
 
 #calendar td:hover:not(.current) {
@@ -264,6 +272,7 @@ header a:hover {
   font-weight: 700;
   color: #fff;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  
 }
 
 #calendar .hastask {
