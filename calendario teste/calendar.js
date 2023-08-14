@@ -33,11 +33,41 @@ const table = document.createElement("table");
 const thead = document.createElement("thead");
 const tr = document.createElement("tr");
 const td = document.createElement("td");
+const btnPrev = document.createElement("button")
+const btnNext = document.createElement("button")
+
+btnPrev.innerText = "Anterior"
+btnPrev.classList.add("btnCalendar")
+btnPrev.addEventListener("click",
+() =>{
+  mes--
+  if (mes < 0) {
+    mes = 11;
+    ano--;
+  }
+  dataHora.setFullYear(ano, mes, 1);
+  atualizaCalendario()
+})
+btnNext.innerText = "Próximo"
+btnNext.classList.add("btnCalendar")
+btnNext.addEventListener("click",
+() =>{
+  mes++
+  if (mes > 11) {
+    mes = 0;
+    ano++;
+  }
+  dataHora.setFullYear(ano, mes, 1);
+  atualizaCalendario()
+})
+
+
 
 const tbody = document.createElement("tbody");
 table.appendChild(tbody);
 thead.appendChild(tr);
 tr.appendChild(td);
+
 
 function imprimeDiasDaSemanas() {
   const dias = ["D", "S", "T", "Q", "Q", "S", "S"];
@@ -61,7 +91,7 @@ function imprimeDiasMesCorrente() {
   while (nDia <= pegaUltimoDiaMes(dataHora)) {
     let dataHoraCopia = new Date(dataHora)
     dataHoraCopia.setDate(nDia)
-    const td = document.createElement("td");
+    const td = document.createElement("td")
 
     if (x <= comecaNoDia) {
       td.innerText = "";
@@ -106,28 +136,16 @@ function pegaUltimoDiaMes(data){
     return dataCopia.getDate()
 }
 
-
-
-
-function imprimeDiasNumericos() {
-  let tr = document.createElement("tr");
-  for (let x = 1; x <= 31; x++) {
-    const td = document.createElement("td");
-    td.innerText = x;
-    tr.appendChild(td);
-
-    if (x % 7 === 0) {
-      tbody.appendChild(tr);
-      tr = document.createElement("tr");
-    }
-    if (x === dia) {
-      td.classList.add("current");
-    }
-  }
-  tbody.appendChild(tr);
+function atualizaCalendario() {
+  h1.innerText = meses[mes] + " " + ano;
+  tbody.innerHTML = "";
+  imprimeDiasDaSemanas();
+  imprimeDiasMesCorrente();
 }
 
 imprimeDiasDaSemanas();
-//imprimeDiasNumericos()
 imprimeDiasMesCorrente();
 divCalendar.appendChild(table);
+divCalendar.appendChild(btnPrev) 
+divCalendar.appendChild(btnNext) 
+
