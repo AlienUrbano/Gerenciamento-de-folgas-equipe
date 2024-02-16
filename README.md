@@ -8,8 +8,8 @@ O projeto é atualizado de acordo com minha evolução nas minhas práticas e es
 ### Algumas funcionalidades: 
 - Adicionar, editar e excluir membros da equipe de colaboradores
 - Calendário interativo que mostra os principais feriados da região
--Agendar uma folga para o dia desejado pelo colaborador ou pela gestão, classificando seu tipo(Banco de horas, feriado, folga de aniversário)
--Disparo automático de e-mail para notificar o colaborador que sua folga foi agendada com sucesso para a respectiva data.
+- Agendar folga para o dia desejado pelo colaborador ou pela gestão, classificando seu tipo(Banco de horas, feriado, folga de aniversário)
+- Disparo automático de e-mail para notificar o colaborador que sua folga foi agendada com sucesso para a respectiva data.
 
 ### Tecnologias utilizadas:
 
