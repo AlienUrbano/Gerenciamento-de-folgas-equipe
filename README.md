@@ -1,4 +1,4 @@
-# Gerenciamento-de-folgas-equipe
+# Gerenciamento de folgas em equipe
 ## Projeto em andamento 👨‍🏭
 Abordo uma solução em forma de Web App para empresas que adotam banco de horas e que precisam gerenciar as folgas de sua equipe.
 O projeto é atualizado de acordo com minha evolução nas minhas práticas e estudos.
@@ -24,7 +24,7 @@ O projeto é atualizado de acordo com minha evolução nas minhas práticas e es
 ### TO DO
 - [x] Estrutura inicial e definição da identidade da aplicação
 - [x] Lógica parcial com javaScript
-- [] Migração para Angular Framework
-- [] Adicionar toda lógica necessária para operação
-- [] Adoção de boas práticas, metodologia ágil e arquitetura de software
-- [] Adicionar serviço para disparo de e-mail automatico para o colaborador
+- [ ] Migração para Angular Framework
+- [ ] Adicionar toda lógica necessária para operação
+- [ ] Adoção de boas práticas, metodologia ágil e arquitetura de software
+- [ ] Adicionar serviço para disparo de e-mail automatico para o colaborador
