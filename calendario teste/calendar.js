@@ -107,6 +107,7 @@ function imprimeDiasMesCorrente() {
     if (x % 7 === 0) {
       tbody.appendChild(tr);
       tr = document.createElement("tr");
+         
     }
     if (nDia - 1 === dia) {
       td.classList.add("current");
@@ -125,6 +126,7 @@ function imprimeDiasMesCorrente() {
     td.classList.add("nextmonth")
     tr.appendChild(td)
   }
+
   tbody.appendChild(tr);
 }
 
